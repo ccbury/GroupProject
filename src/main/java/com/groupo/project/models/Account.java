@@ -58,5 +58,4 @@ public class Account {
         String str = this.getId()+" "+this.getNickname()+ " "+this.getPassword();
         return str;
     }
-    
 }
