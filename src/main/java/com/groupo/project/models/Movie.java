@@ -18,6 +18,7 @@ public class Movie {
         this.watched=watched;
         this.summary=summary;
     }
+    public Movie(){}
     
     public String getTitle() {
         return title;

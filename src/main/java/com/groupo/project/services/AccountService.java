@@ -6,7 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AccountService {
-    private List<Account> account = Database.getAccountsDB();
+    Database d = new Database();
+    private List<Account> account = d.getAccountsDB();
     
     public List<Account> getAllAccounts() {
         return account;

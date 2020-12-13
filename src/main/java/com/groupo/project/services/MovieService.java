@@ -6,7 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MovieService {
-    private List<Movie> movie = Database.getMoviesDB();
+    Database d = new Database();
+    private List<Movie> movie = d.getMoviesDB();
     
     public List<Movie> getAllMovies() {
         return movie;

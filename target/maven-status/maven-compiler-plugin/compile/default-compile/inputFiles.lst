@@ -1,7 +1,10 @@
-C:\Users\gynga\Desktop\GroupProject\MyBlog App (DB POST COM) Sol_NB12\myblog\src\main\java\com\mycompany\myblog\databases\Database.java
-C:\Users\gynga\Desktop\GroupProject\MyBlog App (DB POST COM) Sol_NB12\myblog\src\main\java\com\mycompany\myblog\resources\MessageResource.java
-C:\Users\gynga\Desktop\GroupProject\MyBlog App (DB POST COM) Sol_NB12\myblog\src\main\java\com\mycompany\myblog\services\CommentService.java
-C:\Users\gynga\Desktop\GroupProject\MyBlog App (DB POST COM) Sol_NB12\myblog\src\main\java\com\mycompany\myblog\models\Message.java
-C:\Users\gynga\Desktop\GroupProject\MyBlog App (DB POST COM) Sol_NB12\myblog\src\main\java\com\mycompany\myblog\resources\CommentResource.java
-C:\Users\gynga\Desktop\GroupProject\MyBlog App (DB POST COM) Sol_NB12\myblog\src\main\java\com\mycompany\myblog\services\MessageService.java
-C:\Users\gynga\Desktop\GroupProject\MyBlog App (DB POST COM) Sol_NB12\myblog\src\main\java\com\mycompany\myblog\models\Comment.java
+C:\Users\gynga\Desktop\GroupProject\MyBlog App (DB POST COM) Sol_NB12\GroupO\src\main\java\com\groupo\project\resources\CustomerResource.java
+C:\Users\gynga\Desktop\GroupProject\MyBlog App (DB POST COM) Sol_NB12\GroupO\src\main\java\com\groupo\project\resources\MovieResource.java
+C:\Users\gynga\Desktop\GroupProject\MyBlog App (DB POST COM) Sol_NB12\GroupO\src\main\java\com\groupo\project\models\Customer.java
+C:\Users\gynga\Desktop\GroupProject\MyBlog App (DB POST COM) Sol_NB12\GroupO\src\main\java\com\groupo\project\services\AccountService.java
+C:\Users\gynga\Desktop\GroupProject\MyBlog App (DB POST COM) Sol_NB12\GroupO\src\main\java\com\groupo\project\models\Movie.java
+C:\Users\gynga\Desktop\GroupProject\MyBlog App (DB POST COM) Sol_NB12\GroupO\src\main\java\com\groupo\project\models\Account.java
+C:\Users\gynga\Desktop\GroupProject\MyBlog App (DB POST COM) Sol_NB12\GroupO\src\main\java\com\groupo\project\services\CustomerService.java
+C:\Users\gynga\Desktop\GroupProject\MyBlog App (DB POST COM) Sol_NB12\GroupO\src\main\java\com\groupo\project\resources\AccountResource.java
+C:\Users\gynga\Desktop\GroupProject\MyBlog App (DB POST COM) Sol_NB12\GroupO\src\main\java\com\groupo\project\services\MovieService.java
+C:\Users\gynga\Desktop\GroupProject\MyBlog App (DB POST COM) Sol_NB12\GroupO\src\main\java\com\groupo\project\databases\Database.java

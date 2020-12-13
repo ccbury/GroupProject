@@ -6,7 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CustomerService {
-    private List<Customer> customer = Database.getCustomersDB();
+    Database d = new Database();
+    private List<Customer> customer = d.getCustomersDB();
     
     public List<Customer> getAllCustomers() {
         return customer;

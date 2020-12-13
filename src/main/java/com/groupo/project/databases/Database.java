@@ -16,7 +16,7 @@ public class Database {
     public Database () {
       if (init) {
         Movie m1 = new Movie (1, "the", true, true, "good");
-        Movie m2 = new Movie (2, "yes", true, false, "bad"); 
+        Movie m2 = new Movie (2, "yes", true, false, "bad");
         Movie m3 = new Movie (3, "no", false, true, "okay");
         
         movieDB.add(m1);
