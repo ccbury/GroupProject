@@ -18,7 +18,7 @@ public class Movie {
         this.watched=watched;
         this.summary=summary;
     }
-
+    
     public String getTitle() {
         return title;
     }
