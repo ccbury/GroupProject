@@ -1,7 +1,10 @@
-com\mycompany\myblog\services\MessageService.class
-com\mycompany\myblog\resources\MessageResource.class
-com\mycompany\myblog\services\CommentService.class
-com\mycompany\myblog\models\Message.class
-com\mycompany\myblog\models\Comment.class
-com\mycompany\myblog\resources\CommentResource.class
-com\mycompany\myblog\databases\Database.class
+com\groupo\project\models\Account.class
+com\groupo\project\models\Movie.class
+com\groupo\project\models\Customer.class
+com\groupo\project\services\AccountService.class
+com\groupo\project\resources\MovieResource.class
+com\groupo\project\resources\CustomerResource.class
+com\groupo\project\services\MovieService.class
+com\groupo\project\resources\AccountResource.class
+com\groupo\project\databases\Database.class
+com\groupo\project\services\CustomerService.class
