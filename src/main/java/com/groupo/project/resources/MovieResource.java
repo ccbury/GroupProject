@@ -18,18 +18,22 @@ import javax.ws.rs.PathParam;
 public class MovieResource {
     private MovieService MovieService = new MovieService();
     
-    //get all accounts
+    //get all movies
     @GET
-    public List<Movie> getMovies(@PathParam("MovieID") int m_id) {
+    public List<Movie> getMovies() {
         return MovieService.getAllMovies();
     }
 	
-    //create an account
+    //create a movie 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Movie postMovie(@PathParam("MovieID")  Movie m) {
         return MovieService.createMovie(m);
-    } 
+    }
     
+    //delete a movie
+    public Movie deleteMovie(Movie m) {
+        return MovieService.deleteMovie(m);
+    }
 }
