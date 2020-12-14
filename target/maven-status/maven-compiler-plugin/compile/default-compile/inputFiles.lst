@@ -1,10 +1,10 @@
-C:\Users\gynga\Desktop\GroupProject\MyBlog App (DB POST COM) Sol_NB12\GroupO\src\main\java\com\groupo\project\resources\CustomerResource.java
-C:\Users\gynga\Desktop\GroupProject\MyBlog App (DB POST COM) Sol_NB12\GroupO\src\main\java\com\groupo\project\resources\MovieResource.java
-C:\Users\gynga\Desktop\GroupProject\MyBlog App (DB POST COM) Sol_NB12\GroupO\src\main\java\com\groupo\project\models\Customer.java
-C:\Users\gynga\Desktop\GroupProject\MyBlog App (DB POST COM) Sol_NB12\GroupO\src\main\java\com\groupo\project\services\AccountService.java
-C:\Users\gynga\Desktop\GroupProject\MyBlog App (DB POST COM) Sol_NB12\GroupO\src\main\java\com\groupo\project\models\Movie.java
-C:\Users\gynga\Desktop\GroupProject\MyBlog App (DB POST COM) Sol_NB12\GroupO\src\main\java\com\groupo\project\models\Account.java
-C:\Users\gynga\Desktop\GroupProject\MyBlog App (DB POST COM) Sol_NB12\GroupO\src\main\java\com\groupo\project\services\CustomerService.java
-C:\Users\gynga\Desktop\GroupProject\MyBlog App (DB POST COM) Sol_NB12\GroupO\src\main\java\com\groupo\project\resources\AccountResource.java
-C:\Users\gynga\Desktop\GroupProject\MyBlog App (DB POST COM) Sol_NB12\GroupO\src\main\java\com\groupo\project\services\MovieService.java
-C:\Users\gynga\Desktop\GroupProject\MyBlog App (DB POST COM) Sol_NB12\GroupO\src\main\java\com\groupo\project\databases\Database.java
+C:\Users\georg\Documents\NetBeansProjects\GroupProject\src\main\java\com\groupo\project\models\Movie.java
+C:\Users\georg\Documents\NetBeansProjects\GroupProject\src\main\java\com\groupo\project\services\MovieService.java
+C:\Users\georg\Documents\NetBeansProjects\GroupProject\src\main\java\com\groupo\project\services\AccountService.java
+C:\Users\georg\Documents\NetBeansProjects\GroupProject\src\main\java\com\groupo\project\resources\MovieResource.java
+C:\Users\georg\Documents\NetBeansProjects\GroupProject\src\main\java\com\groupo\project\models\Account.java
+C:\Users\georg\Documents\NetBeansProjects\GroupProject\src\main\java\com\groupo\project\services\CustomerService.java
+C:\Users\georg\Documents\NetBeansProjects\GroupProject\src\main\java\com\groupo\project\databases\Database.java
+C:\Users\georg\Documents\NetBeansProjects\GroupProject\src\main\java\com\groupo\project\resources\CustomerResource.java
+C:\Users\georg\Documents\NetBeansProjects\GroupProject\src\main\java\com\groupo\project\models\Customer.java
+C:\Users\georg\Documents\NetBeansProjects\GroupProject\src\main\java\com\groupo\project\resources\AccountResource.java

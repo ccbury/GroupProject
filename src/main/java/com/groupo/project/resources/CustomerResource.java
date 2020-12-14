@@ -1,6 +1,8 @@
 package com.groupo.project.resources;
 
+import com.groupo.project.models.Account;
 import com.groupo.project.models.Customer;
+import com.groupo.project.services.AccountService;
 import com.groupo.project.services.CustomerService;
 import java.util.List;
 import javax.ws.rs.Consumes;
@@ -15,20 +17,38 @@ import javax.ws.rs.core.MediaType;
 
 public class CustomerResource {
     private CustomerService CustomerService = new CustomerService();
+    private AccountService AccountService = new AccountService();
     
-    //get all accounts
+    //get all customers
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public List<Customer> getCustomers() {
         return CustomerService.getAllCustomers();
     }
-	
-    //create an account
+    
+    //create a customer
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Customer postCustomer(@PathParam("CustomerID") int c_id, Customer c) {
+    public Customer postCustomer(Customer c) {
         return CustomerService.createCustomer(c);
-    } 
+    }
     
+    //get a customer based on the customer id
+    @GET
+    @Path("/{CustomerID}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Customer getCustomer(@PathParam("CustomerID")int c_id) {
+        System.out.println("get Customer by ID: "+c_id);
+        return CustomerService.getCustomer(c_id);
+    }
+    
+    //get a account based on the customer id and account id (attempt)
+    @GET
+    @Path("/{CustomerID}/{accountID}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Account getAccount(@PathParam("CustomerID")int c_id,@PathParam("AccountID")int a_id) {
+        return AccountService.getAccount(a_id);
+    }
+   
 }
