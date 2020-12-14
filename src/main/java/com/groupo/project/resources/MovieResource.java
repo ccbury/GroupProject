@@ -8,6 +8,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.POST;
 import javax.ws.rs.PathParam;
 
@@ -28,12 +29,13 @@ public class MovieResource {
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Movie postMovie(@PathParam("MovieID")  Movie m) {
+    public Movie postMovie(Movie m) {
         return MovieService.createMovie(m);
     }
     
     //delete a movie
-    public Movie deleteMovie(Movie m) {
+    @DELETE
+    public Movie deleteMovie(@PathParam("accountID") int a_id, Movie m) {
         return MovieService.deleteMovie(m);
     }
 }

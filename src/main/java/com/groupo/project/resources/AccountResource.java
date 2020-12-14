@@ -33,6 +33,7 @@ public class AccountResource {
     //get an account based on id
     @GET
     @Path("/{accountID}")
+    @Produces(MediaType.APPLICATION_JSON)
     public Account getAccount(@PathParam("accountID") int a_id ) {
     	System.out.println("get Account by ID: "+a_id );
 	return AccountService.getAccount(a_id);
