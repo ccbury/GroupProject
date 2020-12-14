@@ -41,14 +41,12 @@ public class Customer {
     public String getEmail() {
         return email;
     }
-
     public void setEmail(String email) {
         this.email = email;
     }
     public String getAddress() {
         return address;
     }
-
     public void setAddress(String address) {
         this.address = address;
     }
@@ -61,9 +59,12 @@ public class Customer {
     public void addAccount(Account account){
         (this.accounts).add(account);
     }
-    
     public String printCustomer() {
         String str = "ID: "+this.getId()+"\tName: "+this.getName()+"\tEmail: "+this.getEmail()+"\tAddress: "+this.getAddress();
         return str;
+    }
+    public void addAccountToCustomer(Account account) {
+        this.accounts.add(account);
+        System.out.println("added a new account to the customer");
     }
 }

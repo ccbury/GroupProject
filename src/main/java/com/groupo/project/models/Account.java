@@ -53,7 +53,6 @@ public class Account {
     public void addMovie(Movie movie){
         this.movies.add(movie);
     }
-    
     public String printAccount() {
         String str = this.getId()+" "+this.getNickname()+ " "+this.getPassword();
         return str;
