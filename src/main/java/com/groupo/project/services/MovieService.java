@@ -24,6 +24,13 @@ public class MovieService {
 	return m;
     }
     
+    public Movie deleteMovie (Movie m){
+        m.getId();
+        movie.remove(m);
+        System.out.println("The following movie has been removed: "+m.getTitle());
+        return m;
+    }
+    
     public List<Movie> getSearchAccounts(String title) {
         List<Movie> matcheslist = new ArrayList<>();
       

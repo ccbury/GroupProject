@@ -20,7 +20,6 @@ public class AccountResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public List<Account> getAccounts() {
-	System.out.println("I got called");
         return AccountService.getAllAccounts();
     }
 	
@@ -31,12 +30,12 @@ public class AccountResource {
     public Account postAccount(Account a) {
         return AccountService.createAccount(a);
     } 
-    
+    //get an account based on id
     @GET
     @Path("/{accountID}")
-    public Account getAccount(@PathParam("accountID") int c_id ) {
-    	System.out.println("getCommentByID..."+c_id );
-	return AccountService.getAccount(c_id);
+    public Account getAccount(@PathParam("accountID") int a_id ) {
+    	System.out.println("get Account by ID: "+a_id );
+	return AccountService.getAccount(a_id);
     }
     
 }
