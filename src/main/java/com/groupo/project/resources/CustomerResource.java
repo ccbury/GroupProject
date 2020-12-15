@@ -17,7 +17,6 @@ import javax.ws.rs.core.MediaType;
 
 public class CustomerResource {
     private CustomerService CustomerService = new CustomerService();
-    private AccountService AccountService = new AccountService();
     
     //get all customers
     @GET
@@ -25,6 +24,14 @@ public class CustomerResource {
     public List<Customer> getCustomers() {
         return CustomerService.getAllCustomers();
     }
+    
+    //get all accounts (doesn't work)
+    //@GET
+    //@Path("/{accountID}")
+    //@Produces(MediaType.APPLICATION_JSON)
+    //public List<Account> getAccounts() {
+        //return AccountService.getAllAccounts();
+    //}
     
     //create a customer
     @POST
@@ -43,12 +50,11 @@ public class CustomerResource {
         return CustomerService.getCustomer(c_id);
     }
     
-    //get a account based on the customer id and account id (attempt)
+    //get a account based on the customer id and account id (doesn't currently work)
     @GET
     @Path("/{CustomerID}/{accountID}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Account getAccount(@PathParam("CustomerID")int c_id,@PathParam("AccountID")int a_id) {
-        return AccountService.getAccount(a_id);
+    public Account getAccount(@PathParam("CustomerID")int c_id, @PathParam("AccountID")int a_id) {
+        return getCustomer(c_id).getAccounts(a_id);
     }
-   
 }

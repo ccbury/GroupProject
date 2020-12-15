@@ -1,5 +1,6 @@
 package com.groupo.project.models;
 
+import com.groupo.project.services.AccountService;
 import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -12,6 +13,7 @@ public class Customer {
     private String email;
     private String address;   
     private List<Account> accounts = new ArrayList<>();
+    AccountService AccountService = new AccountService();
 
     public Customer() {
     }
@@ -65,5 +67,9 @@ public class Customer {
     public String printCustomer() {
         String str = "ID: "+this.getId()+"\tName: "+this.getName()+"\tEmail: "+this.getEmail()+"\tAddress: "+this.getAddress();
         return str;
+    }
+
+    public Account getAccounts(int a_id) {
+        return AccountService.getAccount(a_id);
     }
 }
