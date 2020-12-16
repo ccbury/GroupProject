@@ -33,6 +33,7 @@ public class CustomerResource {
         return CustomerService.createCustomer(c);
     } 
     
+    
     //Get accounts for specific customer
     @GET
     @Path("/{customerID}/account")
@@ -51,19 +52,7 @@ public class CustomerResource {
         List<Account> accounts = cust.getAccounts();
 	return accounts.get(a_id-1);
     }
-    //Set a specific account for a specific customer
-    @POST
-    @Path("/{customerID}/account/{accountID}")
-    @Consumes(MediaType.APPLICATION_JSON)
-    @Produces(MediaType.APPLICATION_JSON)
-    public Account setCustomerAccount(@PathParam("customerID") int c_id, @PathParam("accountID") int a_id , Account account) {
-        Customer cust = CustomerService.getCustomer(c_id);
-        List<Account> accounts = cust.getAccounts();
-        account.setId(a_id);
-        accounts.add(a_id-1, account);
-        cust.setAccounts(accounts);
-	return accounts.get(a_id-1);
-    }
+    
     //Add a new account to a specific customer
     @POST
     @Path("/{customerID}/account")
@@ -77,7 +66,6 @@ public class CustomerResource {
         cust.setAccounts(accounts);
 	return accounts.get(accounts.size()+1);
     }
-    
     
     //Get all movies for a specific customer and account
     @GET
@@ -101,7 +89,6 @@ public class CustomerResource {
 	return movie.get(m_id-1);
     }
 
-    
     //add a new movie for a specific customer and account
     @POST
     @Path("/{customerID}/account/{accountID}/movie")
